@@ -43,17 +43,6 @@ No frameworks. No libraries. Just vanilla HTML & CSS. 💪
 
 ---
 
-## 📂 Project Structure
-
-```
-project/
-├── index.html
-├── style.css
-├── style.css
-├── back.avif
-
-```
-
 ---
 
 ## 🎯 Purpose
