@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+html, body {
+    height: 100%;  
+    background-color:black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+     box-sizing: border-box;
+}
+.nav1{
+    display: flex;
+    gap: 1rem;
+}
+.nav2{
+    display: flex;
+    gap: 3.5rem;
+}
+.nav1 img{
+    height:50px;
+}
+.nav2 h4 img{
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 0px;
+    position: relative;
+}
+.nav3{
+    display: None;
+    gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .nav2{
+        display: None;
+    }
+    .nav3{
+        display: flex;
+    }
+    nav{
+        padding :1rem 1.5rem;
+    }
+}
+main{
+    padding: 100px;
+}
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50%;
+    
+}
+.section1 .left{
+    width:42%;
+}
+.section1 .right{
+    width: 38%;
+    background-color: green;
+    align-self:stretch;
+     
+}
+.section1 .left h1{
+    font-size: 40px;
+}
+.section1 .left .tags{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    flex-wrap: wrap;
+    margin:0.5rem 0;
+}
+.section1 .left .tags h4{
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.left .price{
+    font-size: 30px;
+    color: #ff4500;
+    margin: 1rem 0;
+}
+.green{
+    color:green;
+    font-weight: bold;
+}
+.grayy del{
+    color:gray;
+    font-size:20px;
+}
+.section1 .right .right-in{
+    width:100%;
+    height:100%;
+    background-color:green;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;   
+    flex-direction: column; 
+}
+.section1 .right .right-in .image{
+    width:100%;
+      flex: 1;          
+    overflow: hidden;  /
+}
+.cta{
+    display: flex;
+    align-items: center;
+    gap:10px; 
+    margin: 20px 0;
+}
+.cta button{
+    padding: 10px 20px;
+    background-color: #4dc435;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cta button:nth-child(2){
+    background-color: gray;
+}
+.section1 .right .right-in .image img{
+     width: 100%;
+    display: block;    /* ADD THIS — this is what caused the gap */
+    height: 100%;      /* ADD THIS */
+    object-fit: cover;
+}
+.right-in .image-bottom{
+    padding :40px 20px; 
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.image-bottom h4{
+    padding: 10px 15px;
+    background-color: #151515;
+    width:40%;
+    border-radius: 5px;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .section1{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .section1 .left, .section1 .right{
+        width: 100%;
+    }
+    .right-in .image-bottom h4{
+        width: 100%;
+    }
+}
+.section2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 70px;
+    flex-direction: column;
+}
+.section2 h1{
+    font-size: 150px;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+    background-image: url(back.avif);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+.section2 h1.bloom{
+    position: absolute;
+    filter:blur(80px);
+}
+.section2 h3{
+    font-size: 30px;
+    color: gray;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+}
+@media (max-width: 800px) {
+    .section2 h1{
+        font-size: 80px;
+    }
+    .section2 h3{
+        font-size: 20px;
+    }
+}
